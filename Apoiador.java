@@ -1,44 +1,39 @@
-package atividadefimdemodulo;
+package gen_oop;
 
-public class Apoiador extends Cadastro
-
+public class Apoiador extends Cadastro{
+	private double avaliacao;
+	private String nomedeUsuario;
+	private int idApoiador; 
+	
+	public Apoiador (String nome, int idade, String email, String telefone, String cpf, double avaliacao, String nomedeusuario, int idApoiador)
 	{
-		private double Avaliação;
-		private String NomedeUsuario;
-		private int IDapoiador; 
-		
-		public Apoiador (String nome, int idade, String email, String telefone, String CPF, double avaliação, String nomedeusuario, int IDapoiador)
-		{
-			super (nome, idade, email, telefone, CPF);
-			this.Avaliação = avaliação;
-			this.NomedeUsuario= nomedeusuario;
-			this.IDapoiador= IDapoiador;
-		}
-
-		public double getAvaliação() {
-			return Avaliação;
-		}
- 
-		public void setAvaliação(double avaliação) {
-			Avaliação = avaliação;
-		}
-
-		public String getNomedeUsuario() {
-			return NomedeUsuario;
-		}
-
-		public void setNomedeUsuario(String nomedeUsuario) {
-			NomedeUsuario = nomedeUsuario;
-		}
-
-		public int getIDapoiador() {
-			return IDapoiador;
-		}
-
-		public void setIDapoiador(int iDapoiador) {
-			IDapoiador = iDapoiador;
-		}
-		
-		
-		
+		super(nome, idade, email, telefone, cpf);
+		this.avaliacao = avaliacao;
+		this.nomedeUsuario= nomedeusuario;
+		this.idApoiador= idApoiador;
 	}
+
+	public double getAvaliacao() {
+		return avaliacao;
+	}
+
+	public void setAvaliacao(double avaliacao) {
+		this.avaliacao = avaliacao;
+	}
+
+	public String getNomedeUsuario() {
+		return nomedeUsuario;
+	}
+
+	public void setNomedeUsuario(String nomedeUsuario) {
+		nomedeUsuario = nomedeUsuario;
+	}
+
+	public int getIDapoiador() {
+		return idApoiador;
+	}
+
+	public void setIDapoiador(int idApoiador) {
+		idApoiador = idApoiador;
+}
+}
