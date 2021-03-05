@@ -1,39 +1,45 @@
-package gen_oop;
+package Apoio_solidario;
 
 public class Apoiador extends Cadastro{
 	private double avaliacao;
-	private String nomedeUsuario;
-	private int idApoiador; 
+
+	private int idApoiador;
+	private String mensagem_apoiador;
 	
-	public Apoiador (String nome, int idade, String email, String telefone, String cpf, double avaliacao, String nomedeusuario, int idApoiador)
+	public Apoiador (String nome, int idade, String email, String telefone, String cpf, double avaliacao, int idApoiador, String mensagem_apoiador)
 	{
 		super(nome, idade, email, telefone, cpf);
 		this.avaliacao = avaliacao;
-		this.nomedeUsuario= nomedeusuario;
 		this.idApoiador= idApoiador;
+		this.mensagem_apoiador = mensagem_apoiador;
 	}
-
-	public double getAvaliacao() {
+	public int getIdApoiador() {
+		return idApoiador;
+	}
+	public void setIdApoiador(int idApoiador) {
+		this.idApoiador = idApoiador;
+	}
+	public String getMensagem_apoiador() {
+		return mensagem_apoiador;
+	}
+	public void setMensagem_apoiador(String mensagem_apoiador) {
+		this.mensagem_apoiador = mensagem_apoiador;
+	}
+	public double getAvaliacao(){
 		return avaliacao;
 	}
 
-	public void setAvaliacao(double avaliacao) {
+	public void setAvaliacao(double avaliacao){
 		this.avaliacao = avaliacao;
 	}
 
-	public String getNomedeUsuario() {
-		return nomedeUsuario;
-	}
-
-	public void setNomedeUsuario(String nomedeUsuario) {
-		nomedeUsuario = nomedeUsuario;
-	}
-
-	public int getIDapoiador() {
+	public int getIdapoiador() {
 		return idApoiador;
 	}
 
 	public void setIDapoiador(int idApoiador) {
-		idApoiador = idApoiador;
-}
+		this.idApoiador = idApoiador;
+	}
+
+
 }
