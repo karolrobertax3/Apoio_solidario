@@ -1,4 +1,4 @@
-package gen_oop;
+package Apoio_solidario;
 
 public class Cadastro {
 	private String nomeCompleto;
@@ -55,4 +55,5 @@ public class Cadastro {
 	public void setCPF(String cpf) {
 		this.cpf = cpf;
 	}
+
 }
