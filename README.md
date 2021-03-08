@@ -4,9 +4,9 @@ Projeto social para apoiar pessoas fragilizadas psicológicamente. Abraço virtu
 Grupo 05 Turma 17
 
 - Angela Caperuzzo
+- Karol Batista
 - Mariana Santos
 - Maroune Pondikpa
-- Karol Batista
 - Scarlet Araújo
 - Yuri Dias
 
